@@ -17,6 +17,10 @@
   "homepage": "https://github.com/Jintojose39/Jinto_Labs_Playwright_Ts_with_E2E_AI#readme",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
+    "@types/dotenv": "^8.2.3",
     "@types/node": "^25.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
   }
 }
