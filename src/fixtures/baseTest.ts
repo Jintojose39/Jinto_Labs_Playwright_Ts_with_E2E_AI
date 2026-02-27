@@ -5,6 +5,7 @@ import {LoginPage} from '../pages/LoginPage';
 type MyFixtures = {
   homePage: HomePage;
   signupLoginPage: LoginPage;
+  
 };
 
 export const test = base.extend<MyFixtures>({
