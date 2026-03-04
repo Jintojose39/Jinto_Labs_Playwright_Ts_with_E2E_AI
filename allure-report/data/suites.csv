@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","19179","User should register successfully and delete account","webkit","Wed Mar 04 08:02:47 IST 2026","passed","Wed Mar 04 08:03:06 IST 2026","TC01-Register the User|E2E - User Registration Flow","TC01_registerUser.spec.ts","",""

@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "clean": "rimraf test-results playwright-report allure-results allure-report",
+    "test": "npx playwright test",
+    "test:single": "npm run clean && npx playwright test tests/TC01_registerUser.spec.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jintojose39/Jinto_Labs_Playwright_Ts_with_E2E_AI.git"
@@ -18,9 +22,12 @@
   "devDependencies": {
     "@playwright/test": "^1.58.2",
     "@types/dotenv": "^8.2.3",
-    "@types/node": "^25.3.0"
+    "@types/node": "^25.3.0",
+    "allure-playwright": "^3.5.0",
+    "rimraf": "^6.1.3"
   },
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "dotenv": "^17.3.1"
   }
 }

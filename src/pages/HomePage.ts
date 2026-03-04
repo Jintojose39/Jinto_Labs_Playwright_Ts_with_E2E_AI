@@ -15,7 +15,7 @@ export class HomePage {
   }
 
   async navigate() {
-     await this.page.goto('/');
+     await this.page.goto('/', { waitUntil: 'domcontentloaded' });
   }
 
   async clickSignupLogin() {
