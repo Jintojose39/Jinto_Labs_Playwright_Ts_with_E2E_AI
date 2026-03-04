@@ -11,6 +11,9 @@ export const test = base.extend<Fixtures>({
   page: async ({ page }, use) => {
 
     // 🚫 Block ads globally
+    /**
+     * This route handler intercepts all network requests and checks if the URL contains common ad-related domains. If it does, the request is aborted, effectively blocking ads from loading on any page during the tests. 
+     */
     await page.route('**/*', (route) => {
       const url = route.request().url();
 
